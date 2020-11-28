@@ -1,0 +1,35 @@
+#whoWeAre{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    #whoimg{
+        width: 55%;
+    }
+    #whotext{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        background-image: $weAreBackground;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        padding-top: 13%;
+        p:nth-child(1){
+            font-size: $subtitleSize;
+            color: $violet;
+            font-family: $poppins;
+        }
+        h2{
+            font-family: $poppins;
+            font-weight: bold;
+            font-size: $titleSize;
+        }
+        p{
+            font-size: $pSize;
+            color: $gris;
+            font-family: $poppins;
+            width: 80%;
+        }
+    }
+}

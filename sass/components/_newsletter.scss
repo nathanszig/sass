@@ -1,0 +1,33 @@
+#newsletter{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    p{
+        font-family: $poppins;
+        font-size: $pSize;
+        color: $violet;
+    }
+    h2{
+        font-family: $poppins;
+        font-size: 32px;
+        color: $noir;
+        font-weight: normal;
+        margin-bottom: 25px;
+        span{
+            font-weight: $semiBold;
+        }
+    }
+    form{
+        display: flex;
+        justify-content: center;
+        input{
+            background-color: #f6f7fb;
+            width: 35%;
+            padding: 15px 10px;
+            border: none;
+            padding-left: 20px;
+            margin-right: 25px;
+            font-family: $poppins;
+        }
+    }
+}

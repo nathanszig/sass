@@ -1,0 +1,29 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    width: 90%;
+    margin: auto;
+    #logo{
+        display: flex;
+        align-items: flex-end;
+        h1{
+            font-family: $poppins;
+            font-size: 40px;
+            height: auto;
+            color: #484848;
+        }
+    }
+    ul{
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+        margin-top: 30px;
+        li{
+            font-family: $poppins;
+            font-size: $pSize;
+            list-style: none;
+            color: $blanc;
+        }
+    }
+}

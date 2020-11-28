@@ -1,0 +1,61 @@
+#pricing{
+    background-color: #eceafe;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 65px;
+    p{
+        color: $violet;
+        font-size: $subtitleSize;
+        font-family: $poppins;
+    }
+    h2{
+        color: $noir;
+        font-size: $titleSize;
+        font-family: $poppins;
+        font-weight: $semiBold;
+        margin-bottom: 50px;
+    }
+    #ensPackages{
+        display: flex;
+        justify-content: space-around;
+    }
+    .package{
+        width: 25%;
+        height: 500px;
+        text-align: center;
+        background-color: $blanc;
+        border-radius: 26px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        h4{
+            font-family: $poppins;
+            font-size: 28px;
+            color: $noir;
+            font-weight: $regular;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        p{
+            color: $gris;
+            font-size: $pSize;
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 25px;
+        }
+        h6{
+            font-size: 30px;
+            font-family: $poppins;
+            font-weight: $semiBold;
+            color: $blue;
+        }
+    }
+    .package:nth-child(2){
+        box-shadow: 0 10px 20px 0 rgba(126, 118, 249, 0.16);
+        button{
+            background:$ctaColor ;
+            color: $blanc;
+            border: none;
+        }
+    }
+}

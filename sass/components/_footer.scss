@@ -1,0 +1,48 @@
+footer{
+    background-image: $footerBackground;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 200px;
+    color: $blanc;
+    padding-bottom: 80px;
+    section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+#logoFooter{
+    text-align: center;
+    font-family: $poppins;
+    font-weight: $regular;
+    h3{
+        font-size: $titleSize;
+        margin-bottom: 15px;
+    }
+    p{
+        font-size: 31px;
+    }
+    .reseaux{
+        img{
+            color: $blanc;
+            margin-right: 15px;
+        }
+    }
+}
+.footerdiv{
+    font-family: $poppins;
+    h4{
+        font-size: $subtitleSize;
+        margin-bottom: 35px;
+    }
+    table{
+        font-size: $pSize;
+        }
+    ul{
+        font-size: $pSize;
+        list-style: none;
+        li{
+            margin-bottom: 15px;
+        }
+    }
+}

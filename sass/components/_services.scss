@@ -1,0 +1,66 @@
+#services{
+    
+    width: 90%;
+    margin: auto;
+    p{
+        color: $violet;
+        font-size: 25px;
+        font-family: $lato;
+    }
+    h2{
+        color: $noir;
+        font-family: $poppins;
+        font-weight: $semiBold;
+        font-size: $titleSize;
+        margin-bottom: 40px;
+    }
+    #offres{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-image: $serviceBackground;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: 50px;
+
+        .align{
+            width: 25%;
+            height: 450px;
+            border-radius: 36px;
+            box-shadow: 0 10px 20px 0 rgba(126, 118, 249, 0.1);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin-right: 40px;
+            margin-bottom: 80px;
+            justify-content: center;
+            background-color: $blanc;
+            img{
+                object-fit: contain;
+            }
+            h4{
+                color: $noir;
+                font-family: $poppins;
+                font-size: 18px;
+                font-weight: $semiBold;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 50px;
+            }
+            p{
+                color: $noir;
+                font-family: $lato;
+                font-size: 15px;
+                width: 75%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 10px;
+            }
+            button{
+                position: absolute;
+                bottom: 15px;
+                right: 20px;
+            }
+        }
+    }
+}
