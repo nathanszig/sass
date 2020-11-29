@@ -27,3 +27,39 @@ nav{
         }
     }
 }
+@media screen and (max-width : $laptop){
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        ul{
+            margin: auto;
+            margin-top: 25px;
+        }
+        #logo{
+        width: 300px;
+        margin: auto;
+        h1{
+            color: $blanc;
+        }
+        
+    }
+}
+    }
+    
+
+@media screen and (max-width : $mobileL){
+    nav{
+        #logo{
+            h1{
+                color: $noir;
+            }
+        }
+        ul{
+            li{
+                color: $noir;
+                margin-right: 10px;
+            }
+            
+        }
+    }
+}

@@ -46,3 +46,21 @@ footer{
         }
     }
 }
+
+@media screen and (max-width : $mobileL){
+    footer{
+        padding-top: 260px;
+        section{
+            flex-direction: unset;
+            flex-wrap: wrap;
+        }
+    }
+    .footerdiv{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+        table{
+            margin: auto;
+        }
+    }
+}

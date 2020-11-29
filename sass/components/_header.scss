@@ -4,6 +4,18 @@ header{
     background-position: top right;
     background-position-y: -5px;
     height: 100vh;
+    position: relative;
+    #borderMouse{
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 5%;
+        right: 50%;
+        box-shadow:0 10px 20px 0 rgba(126, 118, 249, 0.16);
+    }
 }
 #sectionHeader{
     width: 90%;
@@ -36,17 +48,7 @@ header{
     #headerimg{
         padding: 0;
     }
-    #borderMouse{
-        width: 80px;
-        height: 80px;
-        display: flex;
-        justify-content: center;
-        border-radius: 50%;
-        position: absolute;
-        bottom: 5%;
-        right: 50%;
-        box-shadow:0 10px 20px 0 rgba(126, 118, 249, 0.16);
-    }
+    
     .reseauxFixe{
         position: absolute;
         transform: rotate(90deg);
@@ -74,10 +76,60 @@ header{
             background: $ctaColor;
             padding: 2px 20px;
         }
-        // #rectangle{
-        //     width: 50px;
-        //     height: 5px;
-        //     background: $ctaColor;
-        // }
     }
 }   
+
+@media screen and (max-width : $laptop){
+    header{
+        background-size: cover;
+    }
+    #sectionHeader{
+        div{
+            width: 100%;
+            text-align: center;
+            padding: 0;
+            margin-top: 50px;
+            h2{
+                color: $blanc;
+                margin-bottom: 50px;
+            }
+            p{
+                color: $blanc;
+                margin-bottom: 40px;
+            }
+        }
+
+    }
+    #headerimg{
+        display: none;
+    }
+}
+@media screen and (max-width : $tablet){
+    header{
+        background-size : 121%;
+        background-position-y: -70px;
+        #borderMouse{
+            display: none;
+        }
+    }
+}
+@media screen and (max-width : $mobileL){
+    header{
+        background-image: none;
+        
+    }
+    #sectionHeader{
+        div{
+            h2{
+                color: $noir;
+                font-size: $titleSizeResp;
+                .gras{
+                    font-size: $titleSizeResp;
+                }
+            }
+            p{
+                color: $noir;
+            }
+        }
+    }
+}

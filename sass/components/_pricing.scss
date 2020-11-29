@@ -59,3 +59,19 @@
         }
     }
 }
+
+@media screen and (max-width : $mobileL){
+    #pricing{
+        h2{
+            font-size: $titleSizeResp;
+        }
+        #ensPackages{
+            flex-direction: column;
+            .package{
+                width: 80%;
+                margin: auto;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}

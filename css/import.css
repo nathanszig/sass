@@ -8,7 +8,18 @@ header {
   background-repeat: no-repeat;
   background-position: top right;
   background-position-y: -5px;
-  height: 100vh; }
+  height: 100vh;
+  position: relative; }
+  header #borderMouse {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5%;
+    right: 50%;
+    box-shadow: 0 10px 20px 0 rgba(126, 118, 249, 0.16); }
 
 #sectionHeader {
   width: 90%;
@@ -36,16 +47,6 @@ header {
       margin-bottom: 15px; }
   #sectionHeader #headerimg {
     padding: 0; }
-  #sectionHeader #borderMouse {
-    width: 80px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 5%;
-    right: 50%;
-    box-shadow: 0 10px 20px 0 rgba(126, 118, 249, 0.16); }
   #sectionHeader .reseauxFixe {
     position: absolute;
     transform: rotate(90deg);
@@ -67,6 +68,41 @@ header {
       content: '';
       background: linear-gradient(to left, #6156f9, #1a129f);
       padding: 2px 20px; }
+
+@media screen and (max-width: 1024px) {
+  header {
+    background-size: cover; }
+  #sectionHeader div {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin-top: 50px; }
+    #sectionHeader div h2 {
+      color: #ffff;
+      margin-bottom: 50px; }
+    #sectionHeader div p {
+      color: #ffff;
+      margin-bottom: 40px; }
+  #headerimg {
+    display: none; } }
+
+@media screen and (max-width: 768px) {
+  header {
+    background-size: 121%;
+    background-position-y: -70px; }
+    header #borderMouse {
+      display: none; } }
+
+@media screen and (max-width: 426px) {
+  header {
+    background-image: none; }
+  #sectionHeader div h2 {
+    color: #42495b;
+    font-size: 45px; }
+    #sectionHeader div h2 .gras {
+      font-size: 45px; }
+  #sectionHeader div p {
+    color: #42495b; } }
 
 nav {
   display: flex;
@@ -92,6 +128,26 @@ nav {
       font-size: 16px;
       list-style: none;
       color: #ffff; }
+
+@media screen and (max-width: 1024px) {
+  nav {
+    flex-direction: column;
+    justify-content: center; }
+    nav ul {
+      margin: auto;
+      margin-top: 25px; }
+    nav #logo {
+      width: 300px;
+      margin: auto; }
+      nav #logo h1 {
+        color: #ffff; } }
+
+@media screen and (max-width: 426px) {
+  nav #logo h1 {
+    color: #42495b; }
+  nav ul li {
+    color: #42495b;
+    margin-right: 10px; } }
 
 button {
   background: linear-gradient(to left, #6156f9, #1a129f);
@@ -120,7 +176,6 @@ button {
   border: solid #1000ff;
   color: #42495b;
   display: block;
-  width: 45%;
   margin: 35px auto;
   padding-right: 15px; }
 
@@ -158,6 +213,25 @@ button {
       font-family: "Poppins", sans-serif;
       width: 80%; }
 
+@media screen and (max-width: 1024px) {
+  #whoWeAre #whotext {
+    text-align: center; }
+    #whoWeAre #whotext p {
+      margin-left: auto;
+      margin-right: auto; }
+    #whoWeAre #whotext button {
+      margin: 15px auto; } }
+
+@media screen and (max-width: 768px) {
+  #whoWeAre #whoimg {
+    display: none; }
+  #whoWeAre #whotext {
+    width: 100%; } }
+
+@media screen and (max-width: 426px) {
+  #whoWeAre #whotext h2 {
+    font-size: 45px; } }
+
 #services {
   width: 90%;
   margin: auto; }
@@ -181,7 +255,8 @@ button {
     background-position-y: 50px; }
     #services #offres .align {
       width: 25%;
-      height: 450px;
+      padding-bottom: 90px;
+      padding-top: 15px;
       border-radius: 36px;
       box-shadow: 0 10px 20px 0 rgba(126, 118, 249, 0.1);
       display: flex;
@@ -213,6 +288,19 @@ button {
         position: absolute;
         bottom: 15px;
         right: 20px; }
+
+@media screen and (max-width: 1024px) {
+  #services #offres .align {
+    width: 40%;
+    text-align: center; } }
+
+@media screen and (max-width: 426px) {
+  #services h2 {
+    font-size: 45px; }
+  #services #offres .align {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 25px; } }
 
 #pricing {
   background-color: #eceafe;
@@ -266,6 +354,16 @@ button {
       color: #ffff;
       border: none; }
 
+@media screen and (max-width: 426px) {
+  #pricing h2 {
+    font-size: 45px; }
+  #pricing #ensPackages {
+    flex-direction: column; }
+    #pricing #ensPackages .package {
+      width: 80%;
+      margin: auto;
+      margin-bottom: 25px; } }
+
 #newsletter {
   text-align: center;
   padding-top: 100px;
@@ -293,6 +391,17 @@ button {
       padding-left: 20px;
       margin-right: 25px;
       font-family: "Poppins", sans-serif; }
+
+@media screen and (max-width: 426px) {
+  #newsletter form {
+    flex-direction: column; }
+    #newsletter form input {
+      width: 85%;
+      margin: auto;
+      margin-bottom: 10px; }
+    #newsletter form button {
+      width: 40%;
+      margin: auto; } }
 
 footer {
   background-image: url(../assets/img/footer.png);
@@ -331,3 +440,16 @@ footer {
     list-style: none; }
     .footerdiv ul li {
       margin-bottom: 15px; }
+
+@media screen and (max-width: 426px) {
+  footer {
+    padding-top: 260px; }
+    footer section {
+      flex-direction: unset;
+      flex-wrap: wrap; }
+  .footerdiv {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px; }
+    .footerdiv table {
+      margin: auto; } }

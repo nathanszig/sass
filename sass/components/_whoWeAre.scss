@@ -33,3 +33,37 @@
         }
     }
 }
+
+@media screen and (max-width : $laptop){
+    #whoWeAre{
+        #whotext{
+            text-align: center;
+            p{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            button{
+                margin: 15px auto;
+            }
+        }
+    }
+}
+@media screen and (max-width : $tablet){
+    #whoWeAre{
+        #whoimg{
+            display: none;
+        }
+        #whotext{
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width : $mobileL){
+    #whoWeAre{
+        #whotext{
+            h2{
+                font-size: $titleSizeResp;
+            }
+        }
+    } 
+}

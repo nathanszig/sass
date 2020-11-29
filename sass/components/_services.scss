@@ -25,7 +25,8 @@
 
         .align{
             width: 25%;
-            height: 450px;
+            padding-bottom: 90px;
+            padding-top: 15px;
             border-radius: 36px;
             box-shadow: 0 10px 20px 0 rgba(126, 118, 249, 0.1);
             display: flex;
@@ -61,6 +62,31 @@
                 bottom: 15px;
                 right: 20px;
             }
+        }
+    }
+}
+
+@media screen and (max-width : $laptop){
+    #services {
+        #offres{
+             .align{
+                width: 40%;
+                text-align: center;
+             }
+        }
+    }
+}
+@media screen and (max-width : $mobileL){
+    #services {
+        h2{
+            font-size: $titleSizeResp;
+        }
+        #offres{
+             .align{
+                width: 100%;
+                margin: auto;
+                margin-bottom: 25px;
+             }
         }
     }
 }
